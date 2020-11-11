@@ -1,6 +1,7 @@
 import { Inject, Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { SearchResult } from "./search-result.model";
+import { HttpClient } from "@angular/common/http";
 
 /**
  * YouTubeService connects to the YoutTube API
@@ -8,7 +9,7 @@ import { SearchResult } from "./search-result.model";
  */
 
 @Injectable()
-export class YouTubeService {
+export class YouTubeSearchService {
     constructor(
         private http: HttpClient,
         @Inject(YOUTUBE_API_KEY) private apiKey: string;
