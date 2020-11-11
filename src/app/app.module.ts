@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; 
+import { youTubeServiceInjectables } from "components/YouTubeSearchComponent";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +21,7 @@ import { YouTubeSearchComponent } from './you-tube-search/you-tube-search.compon
     HttpClientModule,
     FormsModule
   ],
-  providers: [youTubeSearchInjectables],
+  providers: [youTubeServiceInjectables],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
