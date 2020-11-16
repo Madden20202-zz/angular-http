@@ -8,6 +8,9 @@ import { HttpClient } from "@angular/common/http";
  * see: https://developers.google.com/youtube/v3/docs/search/list
  */
 
+ let YOUTUBE_API_KEY: string = "AIzaSyB7HEXVtxNwMIElejbCcx-0tcVhP24zVuk";
+ let YOUTUBE_API_URL: string = "https://www.googleapis.com/youtube/v3/search"; 
+
 @Injectable()
 export class YouTubeSearchService {
     constructor(
